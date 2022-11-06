@@ -4,8 +4,8 @@ cmake_minimum_required(VERSION 3.14)
 include(FetchContent)
 FetchContent_Declare(
     UseLATEX
-    GIT_REPOSITORY  https://gitlab.kitware.com/kmorel/UseLATEX.git
-    GIT_TAG         Version2.7.2
+    URL https://gitlab.kitware.com/kmorel/UseLATEX/-/raw/Version2.7.2/UseLATEX.cmake
+    DOWNLOAD_NO_EXTRACT TRUE
 )
 FetchContent_MakeAvailable(UseLATEX)
 include(${uselatex_SOURCE_DIR}/UseLATEX.cmake)
