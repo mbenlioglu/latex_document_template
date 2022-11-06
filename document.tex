@@ -1,0 +1,42 @@
+%-------------------------------------------------------------------------------
+% Packages and config
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[nottoc]{tocbibind}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+
+\input{functions.tex}
+
+%-------------------------------------------------------------------------------
+% Setup
+\title{Sample \LaTeX Document}
+\author{John Doe}
+\date\today
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+%-------------------------------------------------------------------------------
+% Sections
+\section{First Section}
+\label{sec:one}
+
+This document is a placeholder example document. Three items are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are \cite{latexcompanion,knuthwebsite}. Here is a link to section \hyperref[sec:one]{1}
+
+%-------------------------------------------------------------------------------
+% References
+\medskip
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
+
